@@ -12,6 +12,9 @@ struct ContentView: View {
     @State var lights = (redLight: 0.5, yellowLight: 0.5, greenLight: 0.5)
     @State var buttonText = "Start"
     
+    private let lightIsOn = 1.0
+    private let lightIsOff = 0.5
+    
     var body: some View {
         VStack(spacing: 20) {
             LightView(color: .red, opacity: lights.redLight)
@@ -51,16 +54,16 @@ struct ContentView: View {
         switch currentLight {
             case .red:
                 currentLight = .yellow
-                lights.yellowLight = 1
-                lights.redLight = 0.5
+                lights.yellowLight = lightIsOn
+                lights.redLight = lightIsOff
             case .yellow:
                 currentLight = .green
-                lights.greenLight = 1
-                lights.yellowLight = 0.5
+                lights.greenLight = lightIsOn
+                lights.yellowLight = lightIsOff
             case .green:
                 currentLight = .red
-                lights.redLight = 1
-                lights.greenLight = 0.5
+                lights.redLight = lightIsOn
+                lights.greenLight = lightIsOff
         }
     }
 }
