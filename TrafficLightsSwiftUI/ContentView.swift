@@ -9,9 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var currentLight = CurrentLight.green
-    
     @State var lights = (redLight: 0.5, yellowLight: 0.5, greenLight: 0.5)
-    
     @State var buttonText = "Start"
     
     var body: some View {
@@ -46,7 +44,10 @@ struct ContentView: View {
     }
     
     private func buttonDidTapped() {
-        buttonText = "Next"
+        if buttonText == "Start" {
+            buttonText = "Next"
+        }
+        
         switch currentLight {
             case .red:
                 currentLight = .yellow
