@@ -11,6 +11,7 @@
 		A0D01CFB2B92594500E88E49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D01CFA2B92594500E88E49 /* ContentView.swift */; };
 		A0D01CFD2B92594600E88E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D01CFC2B92594600E88E49 /* Assets.xcassets */; };
 		A0D01D002B92594600E88E49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D01CFF2B92594600E88E49 /* Preview Assets.xcassets */; };
+		A0D01D072B92597400E88E49 /* LightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D01D062B92597400E88E49 /* LightView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		A0D01CFA2B92594500E88E49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A0D01CFC2B92594600E88E49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0D01CFF2B92594600E88E49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A0D01D062B92597400E88E49 /* LightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				A0D01CF82B92594500E88E49 /* TrafficLightsSwiftUIApp.swift */,
 				A0D01CFA2B92594500E88E49 /* ContentView.swift */,
+				A0D01D062B92597400E88E49 /* LightView.swift */,
 				A0D01CFC2B92594600E88E49 /* Assets.xcassets */,
 				A0D01CFE2B92594600E88E49 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0D01CFB2B92594500E88E49 /* ContentView.swift in Sources */,
+				A0D01D072B92597400E88E49 /* LightView.swift in Sources */,
 				A0D01CF92B92594500E88E49 /* TrafficLightsSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
