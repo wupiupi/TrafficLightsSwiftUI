@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State var currentLight = CurrentLight.green
-    @State var lights = (redLight: 0.5, yellowLight: 0.5, greenLight: 0.5)
+    @State var lights = (red: 0.5, yellow: 0.5, green: 0.5)
     @State var buttonText = "Start"
     
     private let lightIsOn = 1.0
@@ -17,9 +17,9 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: 20) {
-            LightView(color: .red, opacity: lights.redLight)
-            LightView(color: .yellow, opacity: lights.yellowLight)
-            LightView(color: .green, opacity: lights.greenLight)
+            LightView(color: .red, opacity: lights.red)
+            LightView(color: .yellow, opacity: lights.yellow)
+            LightView(color: .green, opacity: lights.green)
             
             Spacer()
             
@@ -54,16 +54,16 @@ struct ContentView: View {
         switch currentLight {
             case .red:
                 currentLight = .yellow
-                lights.yellowLight = lightIsOn
-                lights.redLight = lightIsOff
+                lights.yellow = lightIsOn
+                lights.red = lightIsOff
             case .yellow:
                 currentLight = .green
-                lights.greenLight = lightIsOn
-                lights.yellowLight = lightIsOff
+                lights.green = lightIsOn
+                lights.yellow = lightIsOff
             case .green:
                 currentLight = .red
-                lights.redLight = lightIsOn
-                lights.greenLight = lightIsOff
+                lights.red = lightIsOn
+                lights.green = lightIsOff
         }
     }
 }
