@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var currentLight = CurrentLight.green
-    @State var lights = (red: 0.5, yellow: 0.5, green: 0.5)
-    @State var buttonText = "Start"
+    @State private var currentLight = CurrentLight.green
+    @State private var lights = (red: 0.5, yellow: 0.5, green: 0.5)
+    @State private var buttonText = "Start"
     
     private let lightIsOn = 1.0
     private let lightIsOff = 0.5
